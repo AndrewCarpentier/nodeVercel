@@ -15,6 +15,10 @@ app.get('/about', (req, res)=>{
     res.send('This is my about route');
 });
 
+app.get('/test', (req,res)=>{
+    res.send('This is a test 😃')
+});
+
 app.get('/user', (req,res)=>{
     res.send(JSON.stringify(
         {
