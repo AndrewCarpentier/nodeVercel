@@ -15,4 +15,18 @@ app.get('/about', (req, res)=>{
     res.send('This is my about route');
 });
 
+app.get('/user', (req,res)=>{
+    res.send(JSON.stringify(
+        {
+            id: 1,
+            pseudo: "john",
+            email: "john@gmail.com"
+        }
+    ))
+});
+
+app.post('/post', (req,res)=>{
+    res.send(JSON.stringify('POST SUCCESS 🥳'))
+});
+
 module.exports = app;
