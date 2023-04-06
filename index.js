@@ -16,7 +16,7 @@ app.get('/about', (req, res)=>{
 });
 
 app.get('/test', (req,res)=>{
-    res.send('This is a test 😃')
+    res.send('This is a test 😃');
 });
 
 app.get('/user', (req,res)=>{
@@ -26,11 +26,11 @@ app.get('/user', (req,res)=>{
             pseudo: "john",
             email: "john@gmail.com"
         }
-    ))
+    ));
 });
 
 app.post('/post', (req,res)=>{
-    res.send(JSON.stringify('POST SUCCESS 🥳'))
+    res.send(JSON.stringify('POST SUCCESS 🥳'));
 });
 
 module.exports = app;
